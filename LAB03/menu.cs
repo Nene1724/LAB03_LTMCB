@@ -14,11 +14,20 @@ namespace LAB03
             FromN.ShowDialog();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            bai4 FromN = new bai4();
-            FromN.ShowDialog();
-       
+            bai3 FromN = new bai3();
+            FromN.Show();
+            Client_bai3 FromN2 = new Client_bai3();
+            FromN2.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Server_bai1 FromN = new Server_bai1();
+            FromN.Show();
+            Client_bai1 FromN2 = new Client_bai1();
+            FromN2.Show();
         }
     }
 }

@@ -51,11 +51,12 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
-            label1.Location = new Point(352, 59);
+            label1.Location = new Point(361, 59);
             label1.Name = "label1";
             label1.Size = new Size(87, 32);
             label1.TabIndex = 1;
             label1.Text = "BÀI 1";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -74,23 +75,23 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
-            label3.Location = new Point(352, 167);
+            label3.Location = new Point(361, 157);
             label3.Name = "label3";
             label3.Size = new Size(87, 32);
             label3.TabIndex = 3;
             label3.Text = "BÀI 3";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold);
-            label4.Location = new Point(573, 167);
+            label4.Location = new Point(573, 157);
             label4.Name = "label4";
             label4.Size = new Size(87, 32);
             label4.TabIndex = 4;
             label4.Text = "BÀI 4";
-            label4.Click += label4_Click;
             // 
             // menu
             // 

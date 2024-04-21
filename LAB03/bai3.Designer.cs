@@ -1,6 +1,6 @@
 ﻿namespace LAB03
 {
-    partial class bai4
+    partial class bai3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            textBox1 = new TextBox();
             button1 = new Button();
-            button2 = new Button();
             SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.LavenderBlush;
+            textBox1.Location = new Point(12, 12);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(635, 416);
+            textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.BackColor = Color.RosyBrown;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(21, 25);
+            button1.BackColor = Color.Thistle;
+            button1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(663, 12);
             button1.Name = "button1";
-            button1.Size = new Size(199, 41);
+            button1.Size = new Size(112, 58);
             button1.TabIndex = 1;
-            button1.Text = "Start";
+            button1.Text = "LISTEN";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(245, 25);
-            button2.Name = "button2";
-            button2.Size = new Size(255, 41);
-            button2.TabIndex = 2;
-            button2.Text = "Tạo thêm Client";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // bai4
+            // bai3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(568, 116);
-            Controls.Add(button2);
+            BackColor = Color.Thistle;
+            ClientSize = new Size(800, 450);
             Controls.Add(button1);
-            Name = "bai4";
-            Text = "bai4";
+            Controls.Add(textBox1);
+            Name = "bai3";
+            Text = "bai3";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
         private Button button1;
-        private Button button2;
     }
 }

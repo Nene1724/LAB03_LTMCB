@@ -16,7 +16,8 @@ C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\refint\LAB03.dl
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.pdb
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.genruntimeconfig.cache
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\ref\LAB03.dll
-C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.bai4.resources
-C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Client_bai4.resources
-C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Server_bai4.resources
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.sourcelink.json
+C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.bai3.resources
+C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Client_bai3.resources
+C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Client_bai1.resources
+C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Server_bai1.resources

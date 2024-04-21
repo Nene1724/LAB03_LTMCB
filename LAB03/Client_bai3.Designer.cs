@@ -1,6 +1,6 @@
 ﻿namespace LAB03
 {
-    partial class Server_bai4
+    partial class Client_bai3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,44 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btStart = new Button();
-            tbMessage = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
-            // btStart
+            // button1
             // 
-            btStart.Location = new Point(644, 12);
-            btStart.Name = "btStart";
-            btStart.Size = new Size(134, 56);
-            btStart.TabIndex = 0;
-            btStart.Text = "LISTEN";
-            btStart.UseVisualStyleBackColor = true;
-            btStart.Click += btStart_Click;
+            button1.BackColor = Color.Thistle;
+            button1.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(40, 25);
+            button1.Name = "button1";
+            button1.Size = new Size(459, 160);
+            button1.TabIndex = 0;
+            button1.Text = "SEND";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // tbMessage
-            // 
-            tbMessage.Location = new Point(12, 12);
-            tbMessage.Multiline = true;
-            tbMessage.Name = "tbMessage";
-            tbMessage.Size = new Size(626, 412);
-            tbMessage.TabIndex = 1;
-            // 
-            // Server_bai4
+            // Client_bai3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tbMessage);
-            Controls.Add(btStart);
-            Name = "Server_bai4";
-            Text = "Server_bai4";
+            BackColor = SystemColors.ActiveBorder;
+            ClientSize = new Size(547, 223);
+            Controls.Add(button1);
+            Name = "Client_bai3";
+            Text = "Client_bai3";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button btStart;
-        private TextBox tbMessage;
+        private Button button1;
     }
 }

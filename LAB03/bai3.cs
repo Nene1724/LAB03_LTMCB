@@ -1,29 +1,32 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Runtime.InteropServices.ComTypes;
 using System.Text;
-using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace LAB03
 {
-    public partial class Server_bai4 : Form
+    public partial class bai3 : Form
     {
         private TcpListener tcpserver;
         private Thread thread;
-        public Server_bai4()
+
+        public bai3()
         {
             InitializeComponent();
         }
 
         private void SetLog(string str)
         {
-            tbMessage.Invoke((MethodInvoker)delegate ()
+            textBox1.Invoke((MethodInvoker)delegate ()
             {
-                tbMessage.AppendText(str + "\r\n");
+                textBox1.AppendText(str + "\r\n");
                 Application.DoEvents();
             });
         }
@@ -53,12 +56,6 @@ namespace LAB03
                 string mess = Encoding.UTF8.GetString(Data, 0, byteRead);
                 SetLog(mess);
 
-                // Phản hồi
-
-                // Gửi phản hồi cho client
-                byte[] responseData = Encoding.UTF8.GetBytes(mess);
-                networkStream.Write(responseData, 0, responseData.Length);
-                networkStream.Flush();
 
             }
             networkStream.Close();
@@ -75,7 +72,7 @@ namespace LAB03
             }
         }
 
-        private void btStart_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -83,7 +80,7 @@ namespace LAB03
                 tcpserver.Start();
                 thread = new Thread(new ThreadStart(ListenforClient));
                 thread.Start();
-                MessageBox.Show("Server đã bắt đầu lắng nghe!");
+                SetLog ("Server đã bắt đầu lắng nghe trên 127.0.0.1:8080 !");
             }
             catch (Exception ex)
             {
