@@ -10,26 +10,25 @@ namespace LAB03
 {
     public partial class bai4 : Form
     {
-        private TcpListener server;
-        private Thread listenThread;
+        private Server_bai4 serverForm;
+        private Client_bai4 clientForm;
 
         public bai4()
         {
             InitializeComponent();
+            serverForm = new Server_bai4();
+            clientForm = new Client_bai4();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Server_bai4 FromN2 = new Server_bai4();
-            FromN2.ShowDialog();
-            bai4 FromN = new bai4();
-            FromN.ShowDialog();
+            serverForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Client_bai4 FromN = new Client_bai4();
-            FromN.ShowDialog();
+            clientForm.Show();
         }
     }
+
 }

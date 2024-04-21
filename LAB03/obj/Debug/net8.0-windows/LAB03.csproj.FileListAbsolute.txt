@@ -19,3 +19,4 @@ C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\ref\LAB03.dll
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.bai4.resources
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Client_bai4.resources
 C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.Server_bai4.resources
+C:\Users\ADMIN\source\repos\LAB03\LAB03\obj\Debug\net8.0-windows\LAB03.sourcelink.json
