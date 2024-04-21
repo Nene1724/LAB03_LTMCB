@@ -22,7 +22,14 @@ namespace LAB03
 
             InitializeComponent();
         }
-
+        private void SetLog(string str)
+        {
+            textBox2.Invoke((MethodInvoker)delegate ()
+            {
+                textBox2.AppendText(str + "\r\n");
+                Application.DoEvents();
+            });
+        }
         void receiveData()
         {
             try
@@ -35,7 +42,7 @@ namespace LAB03
 
                     Invoke(new Action(() =>
                     {
-                        textBox2.Text = "Nhận từ " + mess + "\n";
+                        SetLog("Nhận từ " + mess + "\n");
                     }));
 
                     string respondMess = "Đã nhận thành công!";

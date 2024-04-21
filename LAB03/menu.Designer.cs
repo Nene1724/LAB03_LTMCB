@@ -56,6 +56,7 @@
             label1.Size = new Size(87, 32);
             label1.TabIndex = 1;
             label1.Text = "BÀI 1";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
             // label2

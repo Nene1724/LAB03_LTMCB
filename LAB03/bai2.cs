@@ -37,10 +37,11 @@ namespace LAB03
                 // Bind và lắng nghe kết nối
                 listenerSocket.Bind(ipepServer);
                 listenerSocket.Listen(-1);
+                MessageBox.Show("Máy chủ đang chạy !");
 
                 // Chấp nhận kết nối đến
                 clientSocket = listenerSocket.Accept();
-                listView1.Items.Add(new ListViewItem("Đang lắng nghe thông điệp Telnet qua cổng 8080\n"));
+                listView1.Items.Add(new ListViewItem("Đã kết nối, đang lắng nghe thông điệp  \n"));
 
                 while (clientSocket.Connected)
                 {
